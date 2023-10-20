@@ -4,13 +4,15 @@
 
 :root {
     --margin: 25px;
+    --margin-big: 50px;
+    --margin-vbig: 100px;
   }
   
 
 * {
     /* font-family: 'Anybody', cursive;  */
     font-family: 'Wix Madefor Display', sans-serif;
-    background-color: black;
+    /* background-color: black; */
     color: white;
     margin: 0;
     padding: 0;
@@ -63,4 +65,72 @@ hr{
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0);
+}
+
+#div1{
+    width: 74%;
+    margin: var(--margin-vbig) auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#div1 img{
+    width: 500px;
+    border-radius: 300px 300px 0px 0px;
+    transform: scaleX(-1);
+}
+
+#div1 #section1{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#div1 #section1 div{
+    width: 74%;
+}
+
+#div1 #section1 button{
+    margin-top: var(--margin);
+}
+
+button{
+    background-color: #9C8B7E;
+    width: 165px;
+    height: 70px;
+    border-radius: 35px;
+    text-align: center;
+    border: none;
+}
+
+#div2{
+    background-color: #9C8B7E;
+    width: 100%;
+    text-align: center;
+    padding-bottom: var(--margin-vbig);
+}
+
+#div2 h1{
+    padding: var(--margin-vbig) 0;
+}
+
+#div2 h3{
+    text-align: left;
+}
+
+#div2 #section2{
+    display: flex;
+    width: 74%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+#div2 #section2 div{
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
 }
