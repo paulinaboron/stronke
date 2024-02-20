@@ -5,7 +5,7 @@
 :root {
     --margin: 25px;
     --margin-big: 50px;
-    --margin-vbig: 100px;
+    --margin-vbig: 120px;
   }
   
 
@@ -47,6 +47,10 @@ hr{
     margin-left: 3%;
 }
 
+#nav a{
+    text-decoration: none;
+}
+
 #mainImg {
     width: 100%;
     padding: var(--margin) 0px;
@@ -78,25 +82,54 @@ hr{
     justify-content: space-between;
 }
 
+#div-s{
+    margin: 85px auto;
+    width: 74%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
 #div1 img, #div5 img{
     width: 500px;
     border-radius: 300px 300px 0px 0px;
-    transform: scaleX(-1);
 }
 
-#div1 #section1{
+#div-s img{
+    width: 500px;
+    height: 660px;
+    border-radius: 300px 300px 0px 0px;
+    object-fit: cover;
+    object-position: 20% 50%;
+}
+
+
+
+#div1 #section1, #div-s #section1{
     width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-#div1 #section1 div{
+#div1 #section1 div, #div-s #section1 div{
     width: 74%;
 }
 
 #div1 #section1 button{
     margin-top: var(--margin);
+}
+
+#div-s ul {
+    list-style-type: none;
+}
+
+#div-s li{
+    padding-top: var(--margin)
+}
+
+#div-s li a{
+    text-decoration: none;
 }
 
 button{
@@ -216,12 +249,8 @@ button{
     margin: var(--margin-vbig);
 }
 
-#footer ul{
-    list-style-type: none;
+#footer p{
     margin-right: 300px;
 }
 
-#footer a{
-    color: #9C8B7E;
-}
 
